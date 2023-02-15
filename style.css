@@ -1,0 +1,223 @@
+/* Define colors */
+:root {
+  --c-white: #fff;
+  --c-black: #1E2235;
+  --c-gray: #757575;
+  --c-bg: #060047;
+  --c-primary: #E90064;
+  --c-primary-2: #B3005E;
+  --c-primary-3: #FF5F9E;
+}
+
+/* Apply default styles to all elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Set background color and dimensions for body element */
+body {
+  background: var(--c-bg);
+  height: 100%;
+  width: 100%;
+}
+
+/* Set color and background for selected text */
+::selection {
+  color: var(--c-white);
+  background: var(--c-primary);
+}
+
+/* Style for header container */
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  background-color: var(--c-bg);
+}
+
+/* Style for logo element inside header */
+.header .logo {
+  color: var(--c-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.4rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+/* Style for code container */
+.code-container {
+  padding: 0.5rem 1rem;
+  display: grid;
+  place-content: center;
+  row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Style for jQuery and JavaScript code blocks */
+.code-container .jquery-code,
+.javascript-code {
+  width: 100%;
+  height: 17rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: scroll;
+  border: 0.125rem solid var(--c-primary-2);
+  border-radius: 0.5rem;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.code-container .jquery-code::-webkit-scrollbar,
+.javascript-code::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style for JavaScript code inside JavaScript code block */
+.code-container .javascript-code .js-code {
+  font-family: monospace;
+  color: var(--c-gray);
+}
+
+/* Style for button container inside code container */
+.code-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+/* Style for button inside button container */
+.code-container .button-container .btn {
+  background-color: var(--c-primary);
+  height: 3rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  display: grid;
+  place-content: center;
+  color: var(--c-white);
+}
+
+/* Style for active button */
+.button-container .btn:active {
+  border: 0.125rem solid var(--c-primary);
+  background-color: var(--c-primary-3);
+  user-select: none;
+}
+
+/* Style for main container */
+.container {
+  width: 100%;
+  padding: 3rem 1rem 1rem 1rem;
+  color: var(--c-white);
+}
+
+/* Style for social media icons container */
+.social-media {
+  padding: 1rem 1rem 0 1rem;
+}
+
+/* Style for heading inside main container */
+.container h1 {
+  line-height: 1.75rem;
+  color: var(--c-primary);
+}
+
+/* Style for text inside main container */
+.container p {
+  line-height: 1.375rem;
+  color: var(--c-white);
+}
+
+/*Social media icon wrapper*/
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  width: 100%;
+  list-style: none;
+}
+
+/*Social media icon li*/
+.wrapper .icon {
+  position: relative;
+  background: var(--c-white);
+  color: var(--c-primary);
+  border-radius: 100%;
+  transition: all 0.2s ease;
+  padding: 0.9375rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Style for if Social media icon li active*/
+.wrapper .icon:active {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+}
+
+/*Style for creator credit*/
+.creator {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* Responsive styles for tablet & desktop */
+@media only screen and (min-width: 700px) {
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .code-container {
+    padding: 0.5rem 2rem;
+  }
+
+  .creator {
+    justify-content: flex-end;
+  }
+
+  .container {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
+  .code-container .jquery-code,
+  .javascript-code {
+    height: 16rem;
+  }
+}

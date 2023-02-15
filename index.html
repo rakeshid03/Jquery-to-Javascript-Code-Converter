@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060047">
+
+  <!-- Page title -->
+  <title>Jquery to JavaScript converter</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="logo.png" />
+
+  <!-- Font Awesome stylesheet -->
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header and logo -->
+  <section class="header">
+    <div class="logo">
+      <img src="logo.png" alt="j2j logo" width="39px"> Jquery to Javascript
+    </div>
+  </section>
+
+  <!-- Code converter section -->
+  <section class="code-container">
+    <!-- jQuery text box -->
+    <textarea id="jquery-code" class="jquery-code" placeholder="Paste Your Jquery Code Here" rows="13" cols="999999999"></textarea>
+
+    <!-- JavaScript text box -->
+    <div id="javascript-code" class="javascript-code">
+      <pre class="js-code" id="js-code">Get JavaScript Code Here</pre>
+    </div>
+
+    <!-- Clear and Copy buttons -->
+    <div class="button-container">
+      <div class="btn clear" onclick="cleartext()">Clear</div>
+      <div class="btn copy" id="copy-btn" onclick="copyJS()">Copy</div>
+    </div>
+  </section>
+  <!-- End of code converter section -->
+
+  <!-- Details about Jquery 2 JavaScript -->
+  <section class="container">
+    <h1>What is Jquery to Javascript?</h1>
+    <br />
+    <p>Jquery to Javascript Code Converter is an online tool that enables users to convert their Jquery code to equivalent Javascript code. Jquery is a popular JavaScript library used to simplify HTML document traversing, event handling, and animation. However, not all environments support Jquery, and in such cases, developers need to convert their Jquery code into regular Javascript code. Jquery to Javascript code converter tools provide an easy and efficient way to perform this conversion, allowing developers to use their Jquery code in a wider range of environments.
+    </p>
+    <br />
+    <h1>How to use Jquery to Javascript tool?</h1>
+    <br />
+    <p>To use this tool all you need to do is paste your Jquery code in the input field provided and it will convert it into equivalent JavaScript code which can then be copied and used in your project. This tool provide an easy and convenient way for developers to make their Jquery code compatible with environments that don't support Jquery.
+    </p>
+    <br />
+    <h1>Why should you use this tool?</h1>
+    <br />
+    <p>It enables users to convert their Jquery code into equivalent Javascript code for free, quickly, securely, and with 100% accuracy. With its fast conversion process, developers can quickly and efficiently convert their code, without having to worry about accuracy or security issues.
+    </p>
+  </section>
+
+  <!-- Creator of Jquery to javascript-->
+  <section class="container social-media">
+    <!-- social media icon -->
+    <ul class="wrapper">
+      <a href="https://www.facebook.com/rakeshid03">
+        <li class="icon">
+          <i class="fab fa-facebook-f"></i>
+        </li>
+      </a>
+      <a href="https://twitter.com/Rakeshid03">
+        <li class="icon">
+          <i class="fab fa-twitter"></i>
+        </li>
+      </a>
+      <a href="https://instagram.com/Rakeshid03">
+        <li class="icon">
+          <i class="fab fa-instagram"></i>
+        </li>
+      </a>
+      <a href="https://github.com/rakeshid03">
+        <li class="icon">
+          <i class="fab fa-github"></i></span>
+        </li>
+      </a>
+      <a href="https://codepen.io/Rakeshid03">
+        <li class="icon">
+          <i class="fab fa-codepen"></i>
+        </li>
+      </a>
+    </ul>
+
+    <div class="creator">
+      Made with ☕ by @rakeshid03
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
